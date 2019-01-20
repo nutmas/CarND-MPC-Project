@@ -278,17 +278,6 @@ int main() {
               next_x_vals.push_back(ptsx_transformed[i]);
               next_y_vals.push_back(ptsy_transformed[i]);
           }
-        
-
-          /*
-          double marker_point_interval = 4.0;
-          int marker_points = 8;
-          for (int i = 1; i <= marker_points; i++) {
-              double x = marker_point_interval * i;
-              next_x_vals.push_back(x);
-              next_y_vals.push_back(polyeval(coeffs, x));
-          }
-           */
             
           // pass target path to simulator: displayed on road as yellow line with interval nodes
           msgJson["next_x"] = next_x_vals;
